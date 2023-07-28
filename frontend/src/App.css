@@ -1,0 +1,32 @@
+@tailwind components;
+@tailwind base;
+@tailwind utilities;
+
+body {
+  background-color: #f7f8f6;
+  color: #0b101e;
+}
+* > * {
+  font-family: "SangBleu Sunrise";
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Works for Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+main {
+  position: relative;
+  z-index: 1;
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
